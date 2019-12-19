@@ -1,0 +1,54 @@
+html{
+  background: #212735;
+}
+main{
+  display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+  padding: 0 30px;
+	justify-content: center;
+  text-align:center;
+  color: #FFFFFF;
+}
+
+main > .intro{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 6rem;
+  letter-spacing:4px;
+  position: relative;
+}
+
+.hat{
+  background: url("../img/hat.png") no-repeat center center;
+  	width: 100px;
+  	height: 100px;
+  	position: absolute;
+  	z-index: 9999;
+}
+
+main > .dream{
+font-family: 'Montserrat', sans-serif;
+padding-top: 25px;
+font-size: 2rem;
+width: auto;
+height: auto;
+}
+
+.links{
+  display: flex;
+ justify-content: center;
+  width: auto;
+  height: auto;
+  margin-top: 25px;
+}
+.icon{
+  justify-content: space-between;
+  margin-right: 28px;
+}
+
+.other_links{
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: bottom;
+}

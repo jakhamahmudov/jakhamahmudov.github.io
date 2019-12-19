@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900&display=swap&subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Vast+Shadow&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/link_list.css">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/themes/grey-white.css">
+    <link rel="stylesheet" href="dist/snow.min.css">
+      <meta name="description" content="snow-js">
+   <script defer src="js/all.js"></script> <!--load all styles -->
+<!--noo scroll -->
+   <style>
+html,body {
+  width:100%;
+  height:100%;
+   overflow:hidden}
+</style>
+<script>
+document.onmousewheel = document.onwheel = function() {
+return false;
+};
+
+document.addEventListener ("MozMousePixelScroll",
+function() { return false }, false);
+
+document.onkeydown = function(e) {
+if (e.keyCode >= 33 && e.keyCode <= 40) return false;
+}
+</script>
+
+<title>Jakha</title>
+</head>
+<body>
+
+<main>
+
+  <div class="intro">
+      Jakha
+</div>
+
+<div class="links">
+<!--<i class="far fa-user"></i>  -->
+<div class="icon">
+  <a target="_blank" href="http://rsdev.ml/telegram?username=Makhmudov_Dzakhhogir"><i class="fab fa-telegram fa-3x"></i></a>
+</div>
+<div class="icon">
+  <a target="_blank" href="https://www.instagram.com/jakha_mahmudov/"><i class="fab fa-instagram fa-3x"></i></a>
+</div>
+<div class="icon">
+  <a target="_blank" href="https://twitter.com/85VcJvbBC8OG8J2"><i class="fab fa-twitter fa-3x"></i></a>
+</div>
+<div class="icon">
+  <a target="_blank" href="https://vk.com/id269740054"><i class="fab fa-vk fa-3x"></i></a>
+</div>
+<div class="icon">
+<a target="_blank" href="https://e.mail.ru/messages/inbox/?back=1"><i class="fa fa-at  fa-3x"></i></a>
+</div>
+</div>
+  <!--
+  <header>
+<nav class="other_links">
+
+<ul>
+  <li><a target="_blank" href="https://twitter.com/JSPiRiT1337"><i class="fab fa-telegram-plane fa-1x"></i>Other links</a>
+    <ul>
+  <li><a href="#">Камеры</a></li>
+  <li><a href="#">Компьютеры</a></li>
+  <li><a href="#">Телефоны</a>  </li>
+  </ul>
+</ul>
+
+</nav>
+</header> -->
+</main>
+<div id="snow"></div>
+<script src="dist/snow.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        new Snow('#snow',{
+            number:100,
+            r: 2.5,
+            v: 0.9
+        });
+    });
+</script>
+<style>
+    #snow {
+        width:100%;
+        height:100%;
+    }
+</style>
+
+</body>
+</html>
